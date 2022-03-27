@@ -20,7 +20,6 @@ const VideoCard = ({img, title, duration, category, views, time}) => {
                         <span>{time}</span>
                     </div>
                 </div>
-                
             </div>
         </>
     )

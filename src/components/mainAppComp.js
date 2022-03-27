@@ -13,6 +13,8 @@ import Recover from "./forgottenPassword";
 import Categories from "./categories";
 import NotFoundPage from "./404page";
 import Contact from "./contact";
+import Account from "./account"
+import WatchHistory from "./watchHistory";
 
 function MainAppBody() {
     return (
@@ -20,6 +22,7 @@ function MainAppBody() {
 			<Router>
 				<Switch>
 					<Route path="/" component={Home} exact />
+					<Route path="/account" component={Account} />
 					<Route path="/channels" component={Channels} />
 					<Route path="/single-channel" component={SingleChannel} />
 					<Route path="/subscriptions" component={Subscriptions} />
@@ -31,6 +34,7 @@ function MainAppBody() {
 					<Route path="/settings" component={Settings} />
 					<Route path="/categories" component={Categories} />
 					<Route path="/contact" component={Contact} />
+					<Route path="/watch-history" component={WatchHistory} />
 					<Route component={NotFoundPage} />
 				</Switch>
 			</Router>
